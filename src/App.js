@@ -17,7 +17,7 @@ function App() {
     try {
       const parsedData = JSON.parse(jsonInput);
       setLoading(true);
-      const res = await axios.post('https://restful-api-phi.vercel.app/', parsedData);
+      const res = await axios.post('https://restful-api-phi.vercel.app/bfhl', parsedData);
       setResponse(res.data);
       setError(null);
     } catch (err) {
